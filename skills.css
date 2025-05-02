@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(23, 21, 35);
+    color: rgb(128, 127, 127);
+
+}
+#skills{
+    /* border: 2px solid black; */
+    width: 100%;
+    
+}
+#skills h1{
+    /* float: left; */
+    color: rgb(156, 143, 2);
+    /* border: 2px green solid; */
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 3rem;
+    font-style: normal;
+    align-content: center;
+    text-align: center;
+    /* margin-left: 49%; */
+    padding: 10px;
+    /* color: red; */
+
+}
+.skil_img{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(10em ,1fr));
+    grid-template-rows: 6em;
+    grid-gap: 1em;
+    padding: 1em;
+  
+}
+img{
+    margin-top: 10%;
+    padding: 4rem;
+    border: 2px solid  rgb(156, 143, 2);
+    border-radius: 40px;
+    margin-inline: 1rem;
+    border: 2px solid rgb(101, 154, 211);
+    width: 12rem;
+    height: 15rem;
+    box-shadow: 2px  4px 20px rgb(60, 60, 60);
+    cursor: pointer;
+    transition: ease 0.5s;
+
+}
+img:hover{
+    transform: scale(1.1);
+    background-color:   rgb(156, 143, 2);
+
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait){
+    *{
+        height: auto;
+    }
+    .skill_img{
+        display: grid;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 19%;
+        height: auto;
+        margin-bottom: 14rem;
+    }
+    img{
+        width: 18em;
+
+    }
+
+}
+
+
+
+
+
